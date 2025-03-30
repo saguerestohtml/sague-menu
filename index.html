@@ -64,13 +64,25 @@
 
     <div class="container">
 
+		<h3>"Veuillez nous contacter à l'avance en cas de changement d'heure ou de modification du nombre de personnes. </h3>
+		<h3>Si vous ne vous présentez pas dans les 20 minutes suivant l'heure de réservation,</h3>
+		<h3>votre réservation sera automatiquement annulée. Merci."</h3>
+
         <div class="menu-buttons">
+		
+			<button onclick="showMenu('allergie')">Allergies</button>
             <button onclick="showMenu('lunch')">Menu midi</button>
             <button onclick="showMenu('dinner')">Menu soir</button>
             <button onclick="showMenu('takeout')">Emporter</button>
-            <button onclick="showMenu('how')">Méthode</button>
+            <button onclick="showMenu('how')">Consommation</button>
         </div>
-
+		
+		<!-- Allergies -->
+		<div id="allergie" class="menu">
+			<h2>Allergies</h2>
+			<img src="Allergie.jpg" alt="Allergies">
+		</div>
+	
         <!-- Menu midi -->
         <div id="lunch" class="menu">
             <h2>Menu midi</h2>
@@ -91,13 +103,17 @@
         <div id="takeout" class="menu">
             <h2>Emporter</h2>
             <img src="5.jpg" alt="Menu emporter">
+			<h3>Sagué - Bibimbap</h3>
+			<img src="bom.jpeg" alt="Menu emporter">
+			<h3>Sagué - So bulgogi</h3>
+			<img src="yeoleum.jpeg" alt="Menu emporter">
         </div>
 
         <!-- Méthode -->
         <div id="how" class="menu">
             <h2>Bibimbap/Dolsot Bibimbap</h2>
             <p>
-            Vous mettez la sauce dedans et vous mélangez avec vos baguettes ou une cuillère.
+            Vous versez la sauce dans le plat et vous les mélangez avec vos baguettes. Nous vous conseillons de le manger avec une cuillère.
             Vous devez bien mélanger tous les ingrédients.</p>
             <table align="center">
                 <tr>
